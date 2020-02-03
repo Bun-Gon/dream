@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+<html>
+<head>
+
+<style>
+/* begin frac */
+span.frac {
+display: inline-block;
+text-align: center;
+vertical-align: middle;
+}
+
+span.frac > sup, span.frac > sub {
+display: block;
+font: inherit;
+padding: 0 0.3em;
+}
+span.frac > sup {border-bottom: 0.08em solid;}
+span.frac > span {display: none;}
+/* frac end */
+
+/* radical */
+span{
+content: "\221A";
+}
+/* end radical */
+
+.question{
+    font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+#submit{
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #297;
+    color: #fff; 
+    border: 2px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#submit:hover{
+    background-color: #3a8;
+}
+
+a {
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+}
+a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.previous {
+background-color: #4CAF50;
+color: black;
+}
+
+.next {
+background-color: #4CAF50;
+color: white;
+}
+
+.round {
+border-radius: 50%;
+}
+</style>
+<!-- If <h3> ... </h3> or other is used between <head>...</head>, all words became bold.  -->
+</head>
+<h3>Functional Notation</h3>
+<body>
+<p>
+If A, B are sets, let f: A &rarr; B.<br/>
+That is, f is a function from A to B.<br/>
+Let f : x &#8614; y<br/>
+That is, y is the image of x under f.<br/>
+Then y is denoted by f(x).<br/>
+In other words, the image of x under f is denoted by f(x).<br/>
+It is read: "f of x".<br/>
+For example, Let J be the set of all integers and let f : J &rarr; J be the function such that f : x &#8614; x<sup>2</sup> + x + 1.
+<br/> In our functional notation, we write<br/>
+f(x) = x<sup>2</sup> + x + 1.<br/>
+which is read : " f of x is x<sup>2</sup> + x + 1".<br/>
+It means "the image of x under f is x<sup>2</sup> + x + 1" or the value of f(x) is x<sup>2</sup> + x + 1".<br/>
+The expression f(x) = x<sup>2</sup> + x + 1 is called <b>the formula of the function f.</b><br/>
+The formula for the function is the convenient way to dewscribe the rule which tells us what the image of each 
+element of the domain is.
+</p>
+
+<p>
+<b>Example 1.</b>  Let the function f: R &rarr; R be given by f(x) = x<sup>2</sup> + x + 3 for every x &isin; R. Find the image of 2 and -3.<br/>
+<b>Solution:</b>  f(x) = x<sup>2</sup> + x + 3<br/>
+f(2) = 2<sup>2</sup> + 2 + 3 = 9<br/>
+f(-3) = (-3)<sup>2</sup> + (-3) + 3<br/>
+<b>Note:   We find that f maps both 2 and -3 to 9. Therefore it is not a one-to-one function.</b>
+</p>
+
+<p>
+<b>Example 2.</b>  Let the function g : R &rarr; R be given by g(x) = 3x<sup>2</sup> for every x &isin; R. Find<br/>
+(a) the image of 2 under g.</br>
+(b) the value of g(-1).
+(c) the value of a &isin; R such that g(a) = -1.<br/>
+(d) the value of a &isin; R such that g(a) = 3.<br/>
+<b> Solution</b><br/>
+g(x) = 3x<sup>2</sup>
+(a) g(2) = 3(2)<sup>2</sup> = 12<br/>
+(b) g(-1) = 3(-1)<sup>2</sup> =3<br/>
+(c) g(a) = 3a<sup>2</sup><br/>
+g(a) = -1<br/>
+3a<sup>2</sup> = -1<br/>
+a<sup>2</sup> = - &nbsp; 
+<span class="frac"><sup>1</sup>
+<span>&frasl;</span>
+<sub>3</sub>
+</span><br>
+<div class="eq-c">&there4; a = &plusmn; 
+&radic;<span style="border-top: 0.5px solid #000000; font-size: 12px;">
+ - &nbsp; 
+<span class="frac"><sup>1</sup>
+<span>&frasl;</span>
+<sub>3</sub>
+</span
+</span>
+</div>
+<div class="eq-c">Since &plusmn; 
+&radic;<span style="border-top: 0.5px solid #000000; font-size: 12px;">
+ - &nbsp; 
+<span class="frac"><sup>1</sup>
+<span>&frasl;</span>
+<sub>3</sub>
+</span>
+</span>&notin; R, we do not have a &isin; R such that g(a) = -1.
+</div>
+(d) g(a) = 3<br/>
+3a<sup>2</sup> = 3</br/>
+&there4; a<sup>2</sup> = 1<br/>
+&there4; a = &plusmn; 1
+</p>
+
+<p>
+<b>Example 3.</b>  Let the functiion f : R &rarr; R be given by f(x) = px + q, where p and q are real numbers. If f(1) = 4
+and f(-2) = 1, find p and q.<br/>
+<b>Solution</b>
+f(x) = px + q<br/>
+f(1) = 4,<br/>
+p(1) + q = 4<br/>
+p + q = 4 -------(1)<br/>
+f(-2) = 1,<br/>
+p(-2) + q = 1<br/>
+&there4; -2p + q = 1 ------- (2)<br/>
+eq -------(1) - (2),<br/>
+
+ <table style="width:10%">
+   <tr>
+	 <td>p</td>
+	 <td>+</td>
+	 <td>q</td>
+	 <td>=</td>
+	 <td>4</td>
+	  </tr>
+ <tr>
+  <tr>
+	 <td>-2p</td>
+	 <td>+</td>
+	 <td>q</td>
+	 <td>=</td>
+	 <td>1</td>
+	  </tr>
+ <tr>
+	 <td>-------</td>
+	 <td>-------</td>
+	 <td>-------</td>
+	 <td>-------</td>
+	 <td>----</td>
+	  </tr>
+ <tr>
+	 <td>3p</td>
+	 <td></td>
+	 <td></td>
+	 <td>=</td>
+	 <td>3</td>
+	
+ </tr>
+ </table>
+ p = 1<br/>
+ p + q = 4,<br/>
+ 1 + q = 4,<br/>
+ q = 3.
+</p>
+
+<p>
+<b>Example 4.</b>  Let the function f : R &rarr; R be given by f(x) = 2<sup>x</sup><br/>
+(a)  What are the images of 3, 0, -2?<br/>
+(b)  Find a &isin; R such that f(a) = 64.<br/>
+<b>Solution</b><br/>
+f(x) = 2<sup>x</sup><br/>
+(a) f(3) = 2<sup>3</sup><br/ = 8<br/>
+f(0) = 2<sup>0</sup> = 1<br/>
+f(-2) = 2<sup>-2</sup> = 
+<span class="frac"><sup>1</sup>
+<span>&frasl;</span>
+<sub>4</sub>
+</span><br/>
+(b) f(a) = 64<br/>
+f(a) = 2<sup>a</sup><br/>
+2<sup>a</sup> = 64<br/>
+2<sup>a</sup> = 2<sup>6</sup><br/>
+&there4; a = 6
+</p>
+
+<p>
+<h3>Equality of function</h3>
+Two functions f and g are equal (and we write f = g) if and only if<br/>
+(1) f and g have the same domain,<br/>
+(2) f and g have the same codomain, and<br/>
+(3) f(x) = g(x) for each element x of the domain.<br/>
+Thus, f : A &rarr; B and g : A &rarr; B are regarded as the same function if and only if f(x) = g(x) for each x in A.
+</p>
+
+<p>
+<b>Example 5.</b><br/>
+Let A = {1} and B = {1, 2}.<br/>
+Let f : A &rarr; B be defined by f(x) = x<sup>2</sup> and<br/>
+Let g : A &rarr; B be defined by g(x) = 2x - 1. Then<br/>
+f(1) = 1<sup>2</sup> = 1<br/>
+g(1) = 2(1)-1 = 1<br/>
+&there4; f(1) = g(1), and so f(x) = g(x) for every x in A.
+&there4; f = g
+</p>
+
+ <p>
+ <b>Example 6.</b><br/>
+ Let C = {1, 2} and D = {1, 3, 4}.<br/>
+ Let f : C &rarr; D be defined by f(x) = x<sup>2</sup> and<br/>
+Let g : C &rarr; D be defined by g(x) = 2x - 1. Then<br/>
+f(1) = 1<sup>2</sup> = 1,  g(1) = 2(1)-1 = 1.<br/>
+f(2) = 2<sup>2</sup> = 4,  g(2) = 2(2)-1 = 3.<br/>
+f(2) &ne; g(2).<br/>
+Therefore we have f &ne; g.
+ </p>
+ 
+  <p>
+  <h3>Exercise 1.2</h3>
+  1. Let the function f : R &rarr; R be given by<br/>
+  (a) f(x) = x + 3. Find f(1), f(2), f(-3), f(0), f(<span class="frac"><sup>1</sup>
+<span>&frasl;</span>
+<sub>2</sub></span>).<br/>
+(b) f(x) = 3 - 4x. Find f(1), f(3), f(-2), f(<span class="frac"><sup>1</sup>
+<span>&frasl;</span>
+<sub>2</sub></span>).<br/>
+(c) f(x) = x<sup>2</sup> + 1. Find f(2), f(-1), f(4), f(-3).<br/>
+(d) Find a &isin; R such that f(a) = 50 in (a), (b) and (c).
+  </p>
+  
+  <p>
+ 2. Let the function g : R &rarr; R be given by<br/>
+  (a) g(x) = 2x - 5. Find g(3), g(<span class="frac"><sup>1</sup>
+<span>&frasl;</span>
+<sub>2</sub></span>),
+ g(0), g(-4), g(4). If g(a) = 99, find a.<br/>
+ (b) g(x) = <span class="frac"><sup>x + 5</sup>
+<span>&frasl;</span>
+<sub>2</sub></span>. Find the image of 3, 0, -3. Find x if g(x) = 0.<br/>
+(c) g(x) = 3x - 1. Find x such that g(x) = 20.<br/>
+(d) g(x) = 3x + 1. Find x such that g(x) = 22.
+  </p>
+  
+  <p>
+ 3. Let the function f : R &rarr; R be given by<br/>
+(a) f(x) = ax + b, where a and b are real numbers. If f(3) = 11 and f(1) = 7, find a and b.<br/>
+(b) f(x) = px + q, where p and q are real numbers. If f(1) = 3 and f(5) = 7, find p and q.<br/>
+(c) f(x) = mx + c, where m and c are fixed real numbers. If f(0) = -3 and f(2) = 1, find m and c, and then find f(4). 
+  </p>
+  
+  <p>
+  4. Let the function h :  R &rarr; R be given by h(x) = 2<sup>x</sup>. What are the images of 3, 2, 1, 0, -1, -2? Find a &isin; R
+  such that <br/>
+  (i) h(a) = 64  (ii) h(a) = 128  (iii) h(a) = <span class="frac"><sup>1</sup>
+<span>&frasl;</span>
+<sub>8</sub></span>.
+  </p>
+  
+  <p>
+  5. In this exercise, let f be a function from R &rarr; R.<br/>
+  Which of the following statements are true?<br/>
+  (a) If f(x) = 5 - x, the image of -3 under f is 8.<br/>
+  (b) If f(x) = x<sup>2</sup> + 9, the image of -3 under f is zero.<br/>
+  (c) If f(x) = 3x + 4, then f(a) = a implies that a = -2.<br/>
+  (d) If f(x) = x + 3, there is only one value a &isin; R such that f(a) = 0.<br/>
+  (e) If f(x) = x <sup>2</sup> - 1, then there are exactly two values a &isin; R such that f(a) = 0.
+  </p>
+  
+  <p>
+  6. If f : R &rarr; R and g : R &rarr; R are functions where f(2) = 0 and g(2) = 0, can we say that f and g are
+  the same function? Why?
+  </p>
+  
+  <p>
+  7. If f : R &rarr; R is given by f(x) = x<sup>2</sup> + x, the image of any a &isin; R can be found. If A is a subset of R,
+  we call the set {f(a) | a &isin; A } the image of A under f and we denote this set by f(A). 
+  Find f(B) if B = {-2, -1, 0, 1, 2}.
+  </p>
+  
+  <p>
+ 8. Let the function f : R &rarr; R be given by f(x) = ax<sup>2</sup> + bx. If f(-1) = 7 and f(2) = -2, find the values of
+  a and b and then find the values of x for which f(x) = x.
+  </p>
+  
+  <p>
+  9. The function f is defined by f(x)= <span class="frac"><sup>ax - 3</sup>
+<span>&frasl;</span>
+<sub>x - 1</sub></span> for all real values of x except x = 1.<br/>
+Find the value f a for which (i) f(2) = 5  (ii) f(3) = a  (iii) f(a) = a.
+  </p>
+  
+  <p>
+  10. The function f is defined by f(x) = px<sup>2</sup> + qx - 5 for all values of x. If f(-1) = 1 and f(1) = -8, find<br/>
+  (a) the values of p and q.<br/>
+  (b) the values of x for which f(x) = -5.
+  </p>
+  
+  <h3>Check your answers</h3>
+<div id="quiz"></div>
+<button id="submit">Get Results</button>
+<div id="results"></div>
+
+<!--<a href="HighSchoolMaths.html" target="_blank"></a>-->
+
+<p>
+<script>
+ var myQuestions = [
+    {
+        question: "1a.  The answer is:",
+		
+        answers: {
+            i: '1, 2, 3, 4, 5' ,
+            ii:  '3, 6, -9, 0, 3/2',
+            iii: '4, 5, 0, 3, (7/2)'
+        },
+        correctAnswer: 'iii'
+    },
+    {
+        question: "1b. The answer is:",
+        answers: {
+            i: '-1, -9, 11, 1',
+            ii: '1, 9, 5, -1',
+            iii: '-4, 12, 8, -2 '
+        },
+        correctAnswer: 'i'
+    },
+	{
+        question: "1c. The answer is:",
+        answers: {
+            i: '5, 2, 17, 10' ,
+            ii: '5, 0, 17, -8',
+            iii: '4, 1, 16, 9 '
+        },
+        correctAnswer: 'i'
+    } ,
+	 {
+        question: "1d.  a =",
+		
+        answers: {
+            i: '47, 11, 3' ,
+            ii:  '47, -11.75, (+7 or -7)',
+            iii: ' 7 4, 11.57, 7 '
+        },
+        correctAnswer: 'ii'
+    } ,
+    {
+        question: "2a. The answer is:",
+        answers: {
+            i: '-1, 4, 5, 13, -3 and a = -52',
+            ii: '1, -4, -5, -13, 3 and a = 52',
+            iii: '6, 1, 0, -8, 8 and a = 104 '
+        },
+        correctAnswer: 'ii'
+    },
+	{
+        question: "2b. The answer is:",
+        answers: {
+            i: '7.5, 2.5, -7.5 and x = -3' ,
+            ii: '4, 3, 2 and x = 5',
+            iii: '4, 2.5, 1 and x = -5'
+        },
+        correctAnswer: 'iii'
+    },
+	{
+        question: "2c.  x = ",
+		
+        answers: {
+            i: '21' ,
+            ii:  '7',
+            iii: '20'
+        },
+        correctAnswer: 'ii'
+    },
+    {
+        question: "2d. The answer is:",
+        answers: {
+            i: 'x = 7',
+            ii: 'x = 7.67',
+            iii: 'x = 21 '
+        },
+        correctAnswer: 'i'
+    },
+	{
+        question: "3a. The answer is:",
+        answers: {
+            i: 'a = 2 and b = 5' ,
+            ii: 'a = -2 and b = -5',
+            iii: 'a = 4 and b = 10 '
+        },
+        correctAnswer: 'i'
+    } ,
+	 {
+        question: "3b.  The answer is:",
+		
+        answers: {
+            i: 'p = 1 and q = 4' ,
+            ii:  'p = 3 and q = 7',
+            iii: ' p = 1 and q = 2 '
+        },
+        correctAnswer: 'iii'
+    } ,
+    {
+        question: "3c. The answer is:",
+        answers: {
+            i: 'm = -1, c = 3 and f(4) = -1',
+            ii: 'm = 2, c = -3 and f(4) = 5',
+            iii: 'm = 2, c = -3 and f(4) = 11 '
+        },
+        correctAnswer: 'ii'
+    },
+	{
+        question: "4. The answer is:",
+        answers: {
+            i: 'The image of 3, 2, 1, 0, -1, -2 is = 0.25, 0.5, 1, 2, 4, 8 and a = 6, 7, 8' ,
+            ii: 'The image of 3, 2, 1, 0, -1, -2 is = 8, 4, 2, 1, 0.5, 0.25 and a = 6, 7, -3',
+            iii: 'The image of 3, 2, 1, 0, -1, -2 is = 3, 2, 1, 0, -1, -2 and a = 4, 5, 6'
+        },
+        correctAnswer: 'ii'
+    },
+	 {
+        question: "5a.  The answer is:",
+		
+        answers: {
+            i: 'statement a is true.' ,
+            ii:  'statement b is true.'
+        },
+        correctAnswer: 'i'
+    },
+    {
+        question: "5b. The answer is:",
+        answers: {
+            i: 'statement b is true.',
+            ii: 'statement b is false.'         
+        },
+        correctAnswer: 'ii'
+    },
+	{
+        question: "5c. The answer is:",
+        answers: {
+            i: 'statement c is true.' ,
+            ii: 'statement c is false.'       
+        },
+        correctAnswer: 'i'
+    } ,
+	 {
+        question: "5d.  The answer is:",
+		
+        answers: {
+            i: 'statement d is true.' ,
+            ii:  'statement d is false.'           
+        },
+        correctAnswer: 'i'
+    } ,
+    {
+        question: "5e. The answer is:",
+        answers: {
+            i: 'statement e is true.',
+            ii: 'statement e is false.'
+        },
+        correctAnswer: 'i'
+    },
+	{
+        question: "6. The answer is:",
+        answers: {
+            i: 'Yes. because f(2) = g(2)' ,
+            ii: 'No. Although f(2) = g(2) = 0, f(0) is not equal to g(0). And therefore f and g are not the same function.'           
+        },
+        correctAnswer: 'ii'
+    },
+	{
+        question: "7.  The answer is: ",
+		
+        answers: {
+            i: 'f(B) = {2, 0, 0, 2, 6}' ,
+            ii:  '2, 0, 6',
+            iii: '0, 0, 2, 2, 6'
+        },
+        correctAnswer: 'ii'
+    },
+    {
+        question: "8. The answer is:",
+        answers: {
+            i: 'a = 2, b = -5 and x = 0 or x = 3',
+            ii: 'a = 2, b = 5 and x = 3 ',
+            iii: 'a = 5, b = 2, x = 0 '
+        },
+        correctAnswer: 'i'
+    },
+	{
+        question: "9. The answer is:",
+        answers: {
+            i: 'a = 4, a = 3' ,
+            ii: '(i)a = 4, (ii)a = 3, (iii)a = 4',
+            iii: '(i)a = 4, (ii)a = 3, (iii)a = 3 '
+        },
+        correctAnswer: 'iii'
+    } ,
+	 {
+        question: "10a.  The answer is:",
+		
+        answers: {
+            i: 'p = 3 and q = 4' ,
+            ii:  'p = (3/2) and q = -(9/2)',
+            iii: ' p = 2 and q = 3 '
+        },
+        correctAnswer: 'ii'
+    } ,
+    {
+        question: "10b. The answer is:",
+        answers: {
+            i: 'x = 0 or x = 3',
+            ii: 'x = 3 or x = 9',
+            iii: 'x = 1 or x = 2 '
+        },
+        correctAnswer: 'i'
+    }
+];
+
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+
+    function showQuestions(questions, quizContainer){
+        // we'll need a place to store the output and the answer choices
+        var output = [];
+        var answers;
+
+        // for each question...
+        for(var i=0; i<questions.length; i++){
+            
+            // first reset the list of answers
+            answers = [];
+
+            // for each available answer...
+            for(letter in questions[i].answers){
+
+                // ...add an html radio button
+                answers.push(
+                    '<label>'
+                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                        + letter + ': '
+                        + questions[i].answers[letter]
+                    + '</label>'
+                );
+            }
+
+            // add this question and its answers to the output
+            output.push(
+                '<div class="question">' + questions[i].question + '</div>'
+                + '<div class="answers">' + answers.join('') + '</div>'
+            );
+        }
+
+        // finally combine our output list into one string of html and put it on the page
+        quizContainer.innerHTML = output.join('');
+    }
+
+
+    function showResults(questions, quizContainer, resultsContainer){
+        
+        // gather answer containers from our quiz
+        var answerContainers = quizContainer.querySelectorAll('.answers');
+        
+        // keep track of user's answers
+        var userAnswer = '';
+        var numCorrect = 0;
+        
+        // for each question...
+        for(var i=0; i<questions.length; i++){
+
+            // find selected answer
+            userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+            
+            // if answer is correct
+            if(userAnswer===questions[i].correctAnswer){
+                // add to the number of correct answers
+                numCorrect++;
+                
+                // color the answers green
+                answerContainers[i].style.color = 'lightgreen';
+            }
+            // if answer is wrong or blank
+            else{
+                // color the answers red
+                answerContainers[i].style.color = 'red';
+            }
+        }
+
+        // show number of correct answers out of total
+        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+    }
+
+    // show questions right away
+    showQuestions(questions, quizContainer);
+    
+    // on submit, show results
+    submitButton.onclick = function(){
+        showResults(questions, quizContainer, resultsContainer);
+    }
+
+}
+ </script>
+</p>
+
+<p>
+<a href="HighSchoolMaths.html"
+class="previous">&laquo;
+Previous</a>
+<a href="eqf2.html" class="next">Next &raquo;</a>
+</p>
+
+</body>
+</html> 
+      
