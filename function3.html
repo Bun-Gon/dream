@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+<html>
+<head>
+<style>
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.column {
+  /*height: 200px;
+  width: 300px; */
+ width:device-width;
+  float: left;
+  border: 2px solid #666666;
+  background-color: #ccc;
+  margin-right: 5px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 3px #000;
+  -ms-box-shadow: inset 0 0 3px #000;
+  box-shadow: inset 0 0 3px #000;
+  text-align: center;
+  cursor: move;
+}
+
+/* begin frac */
+span.frac {
+display: inline-block;
+text-align: center;
+vertical-align: middle;
+}
+
+span.frac > sup, span.frac > sub {
+display: block;
+font: inherit;
+padding: 0 0.3em;
+}
+span.frac > sup {border-bottom: 0.08em solid;}
+span.frac > span {display: none;}
+/* frac end */
+
+a {
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+}
+a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.previous {
+background-color: #f1f1f1;
+color: black;
+}
+
+.next {
+background-color: #4CAF50;
+color: white;
+}
+
+.round {
+border-radius: 50%;
+}
+
+.question{
+    font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+#submit{
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #297;
+    color: #fff;
+    border: 1px;
+    border-radius: 3px;
+    padding: 12px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#submit:hover{
+    background-color: #3a8;
+}
+
+a {
+text-decoration: none;
+display: inline-block;
+padding: 8px 12px;
+}
+a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.previous {
+background-color: #4CAF50;
+color: black;
+}
+
+.next {
+background-color: #4CAF50;
+color: white;
+}
+
+.round {
+border-radius: 50%;
+}
+
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+/* or
+
+table, th, td {
+border: 1px solid black;
+} */
+</style>
+</head>
+<body>
+<h3>Equility of functions</h3>
+<p>
+<b>Example 7</b> <br/>
+Let the domain of a function L be the set of positive real numbers, and let the codomain be R. Let the function be described by
+L(x) = 1 + log<sub>10</sub> x. Using your table, find, to three significant figures:<br/>
+(a) the image of 12.<br/>
+(b) the real number a such that L(a) = 2.5.<br/>
+<b>Solution</b><br/>
+<div class="column" draggable="true">
+L(x) = 1 + log<sub>10</sub> x<br/>
+(a) the image of 12 is:
+<br/> L(12) = 1 + log<sub>10</sub>12<br/>
+ = 1 + 1.0792<br/>
+ = 2.0792 <br/>
+ = 2.08</div><br/>
+
+<div class="column" draggable="true">
+ (b) L(a) = 2.5<br/>
+ L(a) = 1 + log<sub>10</sub> a <br/>
+ &there4; 1 + log<sub>10</sub> a = 2.5<br/>
+ log<sub>10</sub> a = 1.5<br/>
+ a = anti-log 1.5 = 10<sup>1</sup> &times; 3.162 = 31.62<br/>
+ a = 31.6, to three significant figures.
+ </div>
+</p>
+
+<p>
+<b>Example 8</b><br/>
+Let the domain of a function t be the set {1&deg;, 2&deg;, 3&deg;, ..... , 90&deg; } and let the codomain be R. Let the function be described by <br/>
+t : x &#8614; sin x + cos x.<br/>
+(a) Use your table to find t(30&deg;), to three significant figures.<br/>
+(b) Find x such that t(x) = 0.<br/>
+<b>Solution</b><br/>
+<div class="column" draggable="true">
+(a) t(x) = sin x + cos x<br/>
+t(30&deg;) = sin 30&deg; + cos 30&deg; <br/>
+= 0.5000 + 0.8660<br/>
+ = 1.366 <br/>
+ = 1.37</div><br/>
+
+<div class="column" draggable="true">
+(b) t(x) = sin x + cos x<br/>
+Since sin x > 0 and cos x &ge; 0 for each x in the domain,<br/>
+ we have , sin x + cos x > 0<br/>
+Therefore there is no x in the domain such that t(x) = 0.
+</div>
+</p>
+
+<p>
+<h3>Exercise 1.3</h3>
+1. Let the domain of the function L be the set of positive real numbers, and let the codomain be R. Let the function L be given by L(x) = log<sub>10</sub> (1 + x).<br/>
+Find, to four significant figures:<br/>
+(a) the image of 5, 12 and 50.<br/>
+(b) "a" such that L(a) = 2.5.
+</p>
+
+<p>
+2. Let A = {x | 0&deg; &le; x &le; 360&deg;}. Let the function t : A &rarr; R be given by t(x) = sin x - cos x.<br/>
+(a) Find t(30&deg;), t(60&deg;), t(90&deg;) to three significant figures.<br/>
+(b) If t(&theta;) = 0.6, find &theta; such that 0 < &theta; < 90&deg;
+</p>
+
+<p>
+3. A function f from A to A, where A is the set of positive integers, is given by
+f(x) = the sum of all possible divisors of x.<br/>
+For example, f(6) = 1 + 2 + 3 + 6 = 12.<br/>
+(a) Find the values of f(2), f(5), f(13), f(18).<br/>
+(b) Show that f(14) = f(15) and f(5) = f (15).
+</p>
+
+<p>
+4. Let A = the set of positive integers &ge; 4,<br/>
+B = the set of all positive integers.<br/>
+Let d : A &rarr; B be a function given by d(n) = <span class="frac"><sup>1</sup>
+<span>&frasl;</span>
+<sub>2</sub>
+</span> n(n - 3), the number of diagonals of a polygon of n sides.<br/>
+(a) Find d(6), d(8), d(10), d(12).<br/>
+(b) How many diagonals will a polygon of 20 sides have?
+</p>
+
+ <p><b>Check your answers.</b></p>
+
+  <div id="quiz"></div>
+<button id="submit">Get Results</button>
+<div id="results"></div>
+
+<p>
+ <script>
+ var myQuestions = [
+    {
+        question: "1a.  The image of 5, 12 and 50 is:",
+
+        answers: {
+            a: '0.7782, 1.1139, 1.708',
+            b: '1.708, 0.7782, 1.1139',
+            c: '6, 13, 51'
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question: "1b. The answer is:",
+        answers: {
+            a: 'a = 316',
+            b:  'a = 317.2',
+            c: 'a = 315.2'
+        },
+        correctAnswer: 'c'
+    },
+	{
+        question: "2a.  The answer is:",
+        answers: {
+            a: '-0.366, 0.366, 1.00' ,
+            b: '.366, -0.366, 1',
+            c: '1, 2, 0'
+        },
+        correctAnswer: 'a'
+    },
+	 {
+        question: "2b. The answer is:",
+        answers: {
+            a: '80 degree',
+            b:  '45 degree 50 minutes',
+            c: '70 degree and 8 minutes'
+        },
+        correctAnswer: 'c'
+    },
+	{
+        question: "3a.  The answer is:",
+        answers: {
+            a: 'f(2) = 2, f(5) = 5, f(13) = 13, f(18) = 18' ,
+            b: 'f(2) = 3, f(5) = 6, f(13) = 14, f(18) = 39',
+            c: 'f(2) = 2, f(5) = 1, f(13) = 2, f(18) = 9'
+        },
+        correctAnswer: 'b'
+    }
+	,
+	{
+        question: "3b.  The answer is:",
+        answers: {
+            a: 'f(14) = f(15) and f(3) . f(5) = f(15) is true.' ,
+            b: 'f(14) = f(15) and f(3) . f(5) = f(15) is false.',
+        },
+        correctAnswer: 'a'
+    },
+	 {
+        question: "4a. The number of diagonals of a polygon of n sides is:",
+        answers: {
+            a: 'd(6) = 6, d(8) = 8, d(10) = 10, d(12) = 12',
+            b:  'd(6) = 27, d(8) = 30, d(10) = 35, d(12) = 40',
+            c: 'd(6) = 9, d(8) = 20, d(10) = 35, d(12) = 54'
+        },
+        correctAnswer: 'c'
+    },
+	{
+        question: "4b. The number of diagonals of a polygon of 20 sides",
+        answers: {
+            a: 'd(20) = 170' ,
+            b: '180',
+            c: '190'
+        },
+        correctAnswer: 'a'
+    }
+];
+
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+
+    function showQuestions(questions, quizContainer){
+        // we'll need a place to store the output and the answer choices
+        var output = [];
+        var answers;
+
+        // for each question...
+        for(var i=0; i<questions.length; i++){
+
+            // first reset the list of answers
+            answers = [];
+
+            // for each available answer...
+            for(letter in questions[i].answers){
+
+                // ...add an html radio button
+                answers.push(
+                    '<label>'
+                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                        + letter + ': '
+                        + questions[i].answers[letter]
+                    + '</label>'
+                );
+            }
+
+            // add this question and its answers to the output
+            output.push(
+                '<div class="question">' + questions[i].question + '</div>'
+                + '<div class="answers">' + answers.join('') + '</div>'
+            );
+        }
+
+        // finally combine our output list into one string of html and put it on the page
+        quizContainer.innerHTML = output.join('');
+    }
+
+
+    function showResults(questions, quizContainer, resultsContainer){
+
+        // gather answer containers from our quiz
+        var answerContainers = quizContainer.querySelectorAll('.answers');
+
+        // keep track of user's answers
+        var userAnswer = '';
+        var numCorrect = 0;
+
+        // for each question...
+        for(var i=0; i<questions.length; i++){
+
+            // find selected answer
+            userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+
+            // if answer is correct
+            if(userAnswer===questions[i].correctAnswer){
+                // add to the number of correct answers
+                numCorrect++;
+
+                // color the answers green
+                answerContainers[i].style.color = 'lightgreen';
+            }
+            // if answer is wrong or blank
+            else{
+                // color the answers red
+                answerContainers[i].style.color = 'red';
+            }
+        }
+
+        // show number of correct answers out of total
+        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+    }
+
+    // show questions right away
+    showQuestions(questions, quizContainer);
+
+    // on submit, show results
+    submitButton.onclick = function(){
+        showResults(questions, quizContainer, resultsContainer);
+    }
+
+}
+ </script>
+ </p>
+
+ <p>
+<a href="quiz2.html"
+class="previous">&laquo;
+Previous</a>
+<a href="function4" class="next">Next &raquo;</a>
+</p>
+
+</body>
+</html>
